@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./assets/js/jspdf.js"></script>
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/html2canvas.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>Document</title>
+</head>
+
+
+<body>  
+    
+    <div class="container-fluid drag-drop mt-3">
+        <div class="row ml-media">
+            <div class="col-sm-1 week">
+                <div class="row">
+                    <div class="bg-success text-white col-sm">Semana</div>    
+                </div>
+               
+                <div class="row">
+                    <div class="d-week col-sm">1</div>                                                          
+                </div>
+                <div class="row">
+                    <div class="d-week col-sm">2</div>                                                          
+                </div>
+                <div class="row">
+                    <div class="d-week col-sm">3</div>                                                          
+                </div>
+                <div class="row">
+                    <div class="d-week col-sm">4</div>                                                          
+                </div>
+
+            </div>
+            <div class="col-sm-11">
+                <div id="planilha">
+
+                    <div class="row ">
+                        <div class="col-sm  bg-primary text-white ">Domingo</div>
+                        <div class="col-sm  bg-primary text-white ">Segunda</div>
+                        <div class="col-sm  bg-primary text-white ">Terça</div>
+                        <div class="col-sm  bg-primary text-white ">Quarta</div>
+                        <div class="col-sm  bg-primary text-white ">Quinta</div>
+                        <div class="col-sm  bg-primary text-white ">Sexta</div>
+                        <div class="col-sm  bg-primary text-white ">Sabado</div>
+                    </div>
+                    <div class="row ">
+                        <div class="drop-container justify-content-center alterar col-sm">
+                            
+                        </div>
+                        <div class="drop-container alterar col-sm">
+                            
+                        </div>
+                        <div class="drop-container alterar col-sm">
+                            
+                        </div>
+                        <div class="drop-container alterar col-sm">
+                            
+                        </div>
+                        <div class="drop-container alterar col-sm">
+                            
+                        </div>
+                        <div class="drop-container alterar col-sm">
+                            
+                        </div>
+                        <div class="drop-container alterar col-sm">
+                            
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="drop-container alterar col-sm">
+                            
+                        </div>
+                        <div class="drop-container alterar col-sm">
+                            
+                        </div>
+                        <div class="drop-container alterar col-sm">
+                            
+                        </div>
+                        <div class="drop-container alterar col-sm">
+                            
+                        </div>
+                        <div class="drop-container alterar col-sm">
+                            
+                        </div>
+                        <div class="drop-container alterar col-sm">
+                            
+                        </div>
+                        <div class="drop-container alterar col-sm">
+                            
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="drop-container alterar col-sm">
+                            
+                        </div>
+                        <div class="drop-container alterar col-sm">
+                            
+                        </div>
+                        <div class="drop-container alterar col-sm">
+                            
+                        </div>
+                        <div class="drop-container alterar col-sm">
+                            <div class="drag2">
+                                15 min MO + 8x(1 min F / 1 min MO) + 10 mim
+                            </div>
+                        </div>
+                        <div class="drop-container alterar col-sm">
+                            
+                        </div>
+                        <div class="drop-container alterar col-sm">
+                            
+                        </div>
+                        <div class="drop-container alterar col-sm">
+                            
+                        </div>
+                    </div>
+                    <div class="row ">
+                        
+                        <div  class="drop-container alterar  col-sm">
+                            
+                        </div>
+                        <div class="drop-container alterar  col-sm">
+                            
+                        </div>
+                        <div class="drop-container alterar  col-sm">
+                            
+                        </div>
+                        <div class="drop-container alterar  col-sm">
+                            
+                        </div>
+                        <div class="drop-container alterar  col-sm">
+                            
+                        </div>
+                        <div class="drop-container alterar col-sm">
+                            
+                        </div>
+                        <div class="drop-container alterar  col-sm">
+                            
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="container">
+                    <div class="row ">
+                        <div  class="drag-container col-sm-10">
+
+                            <div class="drag">
+                                15 min MO + 8x(1 min F / 1 min MO) + 10 mim
+                            </div>
+                            
+                            <div class="drag descanso" >
+                                Descanso
+                            </div>
+                            <div class="drag descanso">
+     
+                            </div>
+
+                            <div class="drag">
+                                
+                            </div>
+                            <div class="drag">
+                                
+                            </div>
+
+                            <div  class="drag">
+                                
+                            </div>
+
+                            <!-- Button trigger modal -->
+                            <div id="edit-1" data-id="1" class="drag treinoEditar">
+                                Editar Card 1 até 65 caracteres
+                            </div>
+
+                            <div id="edit-2" data-id="2" class="drag treinoEditar">
+                                Editar card 2 até 65 caracteres
+                            </div>
+
+                            <div id="edit-3" data-id="3" class="drag treinoEditar">
+                                Editar card 3 até 100 caracteres
+                            </div>
+
+                            <div class="drag">
+                                
+                            </div>
+                            <div class="drag">
+                                
+                            </div>
+
+                            <div class="drag">
+                                
+                            </div>
+
+                        </div>
+                        <div class="col-sm-2 mt-3">
+                            <div class="row">
+                                <div class="col-sm lixeira">
+                                    Arraste aqui para apagar
+                                </div>                    
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm">
+                                    <button class="btn btn-secondary mt-2" type="button" onclick="genPDF()">Salvar PDF</button>
+                                    <a href="./index.html" class="btn btn-danger mt-2">Voltar</a>
+                                </div>                    
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="alterarTreino" tabindex="-1" role="dialog" aria-labelledby="alterarTreinoLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="alterarTreinoLabel">Editar treino</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" name="dadosForm">
+                        <input type="hidden" name="cardID" id="cardID">
+                        <textarea name="editar" id="editar" cols="40" rows="3" maxlength="100"></textarea>
+                        <!-- <input type="text" name="editar" id="editar" maxlength="50"> -->
+                        <br>
+                        <button type="button" value="Editar card de treino" class="btn btn-secondary editCard">Salvar</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Salvar Mudanças</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="./assets/js/jquery.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+    <!-- o bundle já inclui o popper -->
+    <!-- <script src="./assets/js/jspdf.js"></script>
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/pdfFromHTML.js"></script> -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

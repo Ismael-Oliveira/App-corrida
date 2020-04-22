@@ -1,0 +1,202 @@
+.m-container{
+    margin: 100px 10px;
+}
+
+
+.d-week {
+    background: #CCC;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+    font-size: 50px;
+    height: 100px; 
+}
+
+.drop-container {
+    background: #CCC;
+    margin:2px;
+    height: 100px; 
+}
+
+.col-sm{
+    padding-right: 0px;
+    padding-left: 15px;
+}
+
+.container-fluid {
+    padding-right: 50px;
+}
+
+.drag,
+.drag2, 
+.placeholder {
+    font-size: 15px;
+    width: 145px;
+    height: 90px;
+    text-align: center;
+    float: left;
+    font-weight: bold;
+    color: black;
+    overflow: hidden;
+    /* padding: 10px 1px; */
+    /* line-height: 80px; */
+    background: #9caab1;
+    margin-top: 5px;
+    margin-left: 1px;
+    margin-right: 1px;
+    cursor: pointer;
+}
+
+/* aumenta a qauntidade de caracteres para o drag  */
+#edit-3{
+    font-size: 12px;
+}
+
+.descanso{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 80px;
+    color: rgb(177, 52, 52);
+}
+
+.placeholder {
+    background: none;
+    border: 1px dotted #eee;
+}
+
+.lixeira {
+    /* margin: 20px 0; */
+    background: #ddd;
+    border: 2px dotted #999;
+    text-align: center;
+    line-height: 30px;
+    color: #999;
+    font-weight: 700;
+    font-size: 18px;
+    height: 90px;
+}
+.lixeira-ativa {
+    border: 2px dotted red;  
+}
+
+/* css input Modal */
+.modal-body input{
+    margin-bottom: 5px;
+    width: 300px;
+    height: 90px;
+}
+
+.modal-body .btn{
+    float: right;
+    margin: 2px;
+}
+
+.modal-body .btn{
+    float: right;
+    margin: 2px;
+}
+
+.modal-body .editCard{
+    margin-right: 85px;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+@media only screen and (max-width: 1351px) {
+    .row .week{
+      display: none;
+    }
+
+    .drag,
+    .drag2, 
+    .placeholder {
+        font-size: 12px;
+        width: 115px;
+        height: 90px;
+        text-align: center;
+        float: left;
+        font-weight: bold;
+        color: black;
+        overflow: hidden;
+        /* padding: 10px 1px; */
+        /* line-height: 80px; */
+        background: #9caab1;
+        margin-top: 5px;
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+
+    #edit-3{
+        font-size: 10px;
+    }
+
+    .descanso{
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 80px;
+        color: rgb(177, 52, 52);
+    }
+
+    .col-sm{
+        padding-right: 5px;
+        padding-left: 12px;
+    }
+
+    .ml-media{
+        margin-left: 20px;
+    }
+
+  }
+
+@media only screen and (max-width: 1144px) {
+    .row .week{
+      display: none;
+    }
+
+    .drag,
+    .drag2, 
+    .placeholder {
+        font-size: 10px;
+        width: 90px;
+        height: 80px;
+        text-align: center;
+        float: left;
+        font-weight: bold;
+        color: black;
+        overflow: hidden;
+        /* padding: 10px 1px; */
+        /* line-height: 80px; */
+        background: #9caab1;
+        margin-top: 5px;
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+
+    #edit-3{
+        font-size: 10px;
+    }
+
+    .descanso{
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 80px;
+        color: rgb(177, 52, 52);
+    }
+
+    .col-sm{
+        padding-right: 5px;
+        padding-left: 12px;
+    }
+
+    .ml-media{
+        margin-left: 20px;
+    }
+
+  }
